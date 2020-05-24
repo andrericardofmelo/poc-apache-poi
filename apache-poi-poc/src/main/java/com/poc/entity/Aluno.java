@@ -2,20 +2,10 @@ package com.poc.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-/***
- * 
- * @author andre.melo
- * @Date 14/12/2018
- * @description Classe responsável pelo objeto aluno.
- *
- */
-
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder

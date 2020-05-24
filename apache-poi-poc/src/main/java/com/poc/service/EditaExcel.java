@@ -1,4 +1,4 @@
-package com.poc.controller;
+package com.poc.service;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,8 +11,6 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
-import com.poc.util.Constantes;
-
 /***
  * 
  * @author andre.melo
@@ -24,11 +22,13 @@ import com.poc.util.Constantes;
 @SuppressWarnings("resource")
 public class EditaExcel {
 
+	public static final String newFileName = "C:/teste/novo.xls";
+	
 	public static void main(String[] args) throws IOException {
 
 		try {
 			// Abrindo o arquivo.
-			FileInputStream file = new FileInputStream(new File(Constantes.newFileName));
+			FileInputStream file = new FileInputStream(new File(newFileName));
 
 			// Validando se o arquivo é ou não um arquivo excel.
 			HSSFWorkbook workbook = new HSSFWorkbook(file);
@@ -56,7 +56,7 @@ public class EditaExcel {
 			file.close();
 
 			// Cria um novo arquivo atualizado.
-			FileOutputStream outFile = new FileOutputStream(new File(Constantes.newFileName));
+			FileOutputStream outFile = new FileOutputStream(new File(newFileName));
 			workbook.write(outFile);
 			outFile.close();
 			System.out.println("Arquivo Excel editado com sucesso!");

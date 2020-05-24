@@ -1,4 +1,4 @@
-package com.poc.controller;
+package com.poc.service;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,7 +13,6 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
 import com.poc.entity.Aluno;
-import com.poc.util.Constantes;
 
 /***
  * 
@@ -26,6 +25,7 @@ import com.poc.util.Constantes;
 @SuppressWarnings("resource")
 public class CriaExcel {
 	
+	public static final String newFileName = "C:/teste/novo.xls";
 	public static void main(String[] args) throws IOException {
 
 		HSSFWorkbook workbook = new HSSFWorkbook();
@@ -69,7 +69,7 @@ public class CriaExcel {
 
 		try {
 			// Cria um novo arquivo atualizado.
-			FileOutputStream out = new FileOutputStream(new File(Constantes.newFileName));
+			FileOutputStream out = new FileOutputStream(new File(newFileName));
 			workbook.write(out);
 			out.close();
 			System.out.println("Arquivo Excel criado com sucesso!");
