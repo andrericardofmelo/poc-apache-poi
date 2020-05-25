@@ -7,7 +7,7 @@ import java.io.IOException;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-import com.poc.entity.Constantes;
+import com.poc.domain.Constantes;
 import com.poc.service.ArquivoService;
 
 public class EditarExcel {

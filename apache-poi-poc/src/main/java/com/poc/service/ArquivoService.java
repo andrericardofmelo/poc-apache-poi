@@ -11,8 +11,8 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
-import com.poc.entity.Aluno;
-import com.poc.entity.Constantes;
+import com.poc.domain.Constantes;
+import com.poc.domain.entity.Aluno;
 
 public class ArquivoService {
 	

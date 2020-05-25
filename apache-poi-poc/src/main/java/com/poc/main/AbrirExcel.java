@@ -3,7 +3,7 @@ package com.poc.main;
 import java.io.IOException;
 import java.util.List;
 
-import com.poc.entity.Aluno;
+import com.poc.domain.entity.Aluno;
 import com.poc.service.AlunoService;
 import com.poc.service.AvaliacaoService;
 import com.poc.service.ResultadoService;

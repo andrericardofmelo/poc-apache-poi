@@ -2,7 +2,7 @@ package com.poc.service;
 
 import java.util.List;
 
-import com.poc.entity.Aluno;
+import com.poc.domain.entity.Aluno;
 
 public class AvaliacaoService {
 
